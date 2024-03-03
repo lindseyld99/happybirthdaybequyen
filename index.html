@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exciting Birthday Celebration with GIF</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #FF9A8B, #FF6E7F);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            color: #FFD700;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 60%; /* Adjust the width as needed */
+            border-radius: 10px;
+            margin: 20px auto; /* Center the image horizontally */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #00ff00; /* New text color, for example: green */
+        }
+
+        #confetti {
+            display: inline-block;
+            animation: confettiAnimation 2s infinite;
+            font-size: 2em;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ff0000; /* New text color, for example: red */
+        }
+
+        @keyframes confettiAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎉 Happy Birthday bé Quyền! 🎉</h1>
+    <p id="birthdayMessage">Chúc mừng bé Quyền 18 tuổi! 🌈🎂</p>
+    <div id="confetti">🎊</div>
+    <img src="https://media1.tenor.com/m/VU-02rOt8Y4AAAAd/corgi-smirk.gif" alt="Corgi Smirk GIF">
+
+    <script>
+        var messages = [
+            `Chúc mừng bé Quyền 18 tuổi! 🌈🎂`,
+            `Năm nay được xa gia đình để tự lập rồi 🚀🎁`,
+            `Chúc bé luôn vui vẻ, hạnh phúc và bình an 🎉🎈`,
+            `Happy Birthday! 🎂 Xin tặng bé một chiếc quà sinh nhật... 🌟`,
+`đó là...`,
+`...`,
+` chị phải si nghỉ mãi`,
+`quà gì mới hay ho...`,
+`có lẽ cái này cũng không phải thứ em thích bây giờ`,
+`nhưng ai rồi cũng sẽ học về tài chính và đầu tư thôi`,
+`lúc đầu định mở cho em tài khoản chứng khoán`,
+`xong nghĩ lại không có kiến thức thì lại thành báo`,
+`nên quà sinh nhật của Quyền là`,
+`một tài khoản chứng chỉ quỹ của Dragon Capital🐲`,
+`bên trong chị tặng 1.000.000⭐`,
+`(nhưng hôm nào giá xuống thấp sẽ vào, bây giờ đang trên đỉnh)`,
+`...`,
+`em còn rất rất rất nhiều tài năng chưa được khám phá`,
+`tất cả mới chỉ bắt đầu`,
+`mong em sau này học nhiều thứ mới, gặp nhiều người tốt, luôn được may mắn và thành công!✨💖`,
+        ];
+
+        var messageIndex = 1;
+
+        function printBirthdayMessage() {
+            document.getElementById("birthdayMessage").innerHTML = messages[messageIndex];
+
+            // Increment the message index and loop back to the start if needed
+            messageIndex = (messageIndex + 1) % messages.length;
+        }
+
+        // Set an interval to change the message every 5 seconds (5000 milliseconds)
+        setInterval(printBirthdayMessage, 5000);
+    </script>
+
+</body>
+</html>
